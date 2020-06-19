@@ -1,0 +1,209 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #F2F2F2;
+}
+
+header {
+    background: #1E3E59;
+    text-align: center;
+    padding: 30px;
+}
+
+header div a {
+    padding: 5px 20px;
+    margin: 30px;
+    background-color: #0460D9;
+    font-size: 25px;
+    text-decoration: none;
+    color: #F2F2F2;
+    border-radius: 20px;
+}
+
+header div a:hover {
+    background-color: #F24F13;
+    transition: background-color 500ms;
+}
+
+#main {
+    text-align: center;  
+}
+
+#main img {
+    width: 400px;
+    margin: 50px;
+    border: 5px solid #F24F13;
+    border-radius: 100px;
+    padding: 45px;
+}
+
+#main p {
+    width: 600px;
+    margin: auto;
+    font-size: 18px;
+}
+
+#list {
+    margin: auto;
+    margin-top: 50px;
+    width: 400px;
+    text-align: center;
+}
+
+#list ul {
+    padding-left: 0;
+    text-align: center;
+}
+
+#list li {
+    margin: auto;
+    width: 110px;
+    color: #F2F2F2;
+    background-color: #0476D9;
+    padding: 5px;
+    list-style: none;
+    margin-top: 10px;
+    border-radius: 14px;
+}
+
+footer {
+    height: 3.3vh;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #1E3E59;
+    padding: 30px;
+}
+
+footer a {
+    color: #F2F2F2;
+    text-decoration: none;
+    border-bottom: 3px solid #F2F2F2;
+    font-size: 20px;
+    margin: 10px;
+}
+
+footer a:hover {
+    color: #F24F13;
+    border-color: #F24F13;
+    transition: 500ms;
+}
+
+/*=== CONTEÚDO ===*/
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    max-width: 1090px;
+    height: 70vh;
+    margin: 50px auto 50px;
+}
+
+.card {
+    text-align: center;
+    font-size: 18px;
+    background-color: #1E3E59;
+    width: 326px;
+    height: 550px;
+    border-radius: 25px;
+    border: 5px solid #0476D9;
+}
+
+.button {
+    background-color: #0476D9;
+    margin: auto;
+    padding: 15px;
+}
+
+.button:hover {
+    background-color: #F24F13;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.card a {
+    text-decoration: none;
+    color: white;
+}
+
+.card span {
+    color: #F24F13;
+    font-weight: bold;
+}
+
+.card img {
+    height: 150px;
+    margin-top: 120px;
+}
+
+.card-description {
+    color: #F2F2F2;
+    margin: 50px 20px;
+}
+
+.information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #F2F2F2;
+}
+
+.information p {
+    padding: 3px ;
+}
+
+.price {
+    background-color: #224664;
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 120px;
+}
+
+/* === MODAL === */
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: #1E3E59;
+    position: relative;
+    border-radius: 15px;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+}
+
+.close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+/* === MODAL ACTIVE === */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    background-color: white;
+    position: absolute;
+    margin: 70px;
+    width: 85%;
+    height: 85%;
+    border: 10px solid white;
+    border-radius: 10px;
+}
